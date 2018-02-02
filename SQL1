@@ -1,5 +1,0 @@
-select name, date, amount from [customer] 
-join [order] 
-on customer.id = customerid
-order by name, date, amount desc
--- show order for customer order by account
