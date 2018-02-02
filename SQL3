@@ -1,0 +1,8 @@
+select FirstName, LastName, c.Description  as 'Class' from Student s
+join Major m
+on s.MajorId = m.Id
+join schedule sc
+on sc.StudentId = s.Id
+join Class c
+on c.Id = sc.Id
+where m.Description = 'Math'-- code to show exercise 3
